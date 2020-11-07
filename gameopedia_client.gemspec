@@ -11,5 +11,5 @@ Gem::Specification.new do |s|
   s.files         = Dir['lib/gameopedia.rb', 'lib/**/*']
   s.homepage      = 'https://rubygems.org/gems/gameopedia_client'
   s.license       = 'MIT'
-  s.required_ruby_version = '>= 2.4.0'
+  s.required_ruby_version = '>= 2.7'
 end
