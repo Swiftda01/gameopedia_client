@@ -9,10 +9,6 @@ module Gameopedia
   class Client # :nodoc:
     BASE_URI = 'https://api.gameopedia.com/consumer/api/data/europe/GB/retail2'
 
-    def initialize(http_client: Typhoeus)
-      @http_client = http_client
-    end
-
     def get_full_dump(page:)
       get('/dump/full.json', params: { page: page })
     end
@@ -21,10 +17,8 @@ module Gameopedia
 
     private_constant :BASE_URI
 
-    attr_reader :http_client
-
     def get(endpoint, params:)
-      gameopedia_response = http_client.get(BASE_URI + endpoint, params: { **authentication_params, **params })
+      gameopedia_response = Typhoeus.get(BASE_URI + endpoint, params: { **authentication_params, **params })
       Response.new(code: gameopedia_response.code, body: gameopedia_response.body)
     end
 

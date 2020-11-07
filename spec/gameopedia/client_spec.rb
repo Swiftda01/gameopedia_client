@@ -29,12 +29,10 @@ RSpec.describe Gameopedia::Client do
   end
 
   describe '#get_full_dump' do
-    subject { described_class.new(http_client: http_client).get_full_dump(page: page_number) }
-
     let(:page_number) { 1 }
 
     it 'uses an http client to get a paginated dump of game data from Gameopedia' do
-      subject
+      subject.get_full_dump(page: page_number)
 
       expect(http_client).to have_received(:get).with(
         'https://api.gameopedia.com/consumer/api/data/europe/GB/retail2/dump/full.json',
@@ -43,7 +41,7 @@ RSpec.describe Gameopedia::Client do
     end
 
     it 'returns a response object' do
-      expect(subject).to be_kind_of(Gameopedia::Response)
+      expect(subject.get_full_dump(page: page_number)).to be_kind_of(Gameopedia::Response)
     end
   end
 end
