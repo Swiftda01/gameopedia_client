@@ -12,4 +12,7 @@ Gem::Specification.new do |s|
   s.homepage      = 'https://rubygems.org/gems/gameopedia_client'
   s.license       = 'MIT'
   s.required_ruby_version = '>= 2.7'
+  s.add_development_dependency 'rspec', '~> 3.9'
+  s.add_development_dependency 'rubocop', '~> 1.0.0'
+  s.add_development_dependency 'typhoeus', '~> 1.4'
 end
