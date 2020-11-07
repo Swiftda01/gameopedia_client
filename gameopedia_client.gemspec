@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 Gem::Specification.new do |s|
   s.name          = 'gameopedia-client'
   s.version       = '0.1.0'
@@ -9,4 +11,5 @@ Gem::Specification.new do |s|
   s.files         = Dir['lib/gameopedia.rb', 'lib/**/*']
   s.homepage      = 'https://rubygems.org/gems/gameopedia'
   s.license       = 'MIT'
-end 
+  s.required_ruby_version = '>= 2.4.0'
+end
