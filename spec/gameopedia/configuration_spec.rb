@@ -4,7 +4,7 @@ require 'gameopedia/configuration'
 
 RSpec.describe Gameopedia::Configuration do
   it 'allows the auth logon to be written into configuration' do
-    auth_logon = 'something'
+    auth_logon = 'auth_logon'
 
     aggregate_failures do
       subject.auth_logon = auth_logon
@@ -22,7 +22,7 @@ RSpec.describe Gameopedia::Configuration do
   end
 
   it 'allows the auth key to be written into configuration' do
-    auth_key = 'something'
+    auth_key = 'auth_key'
 
     aggregate_failures do
       subject.auth_key = auth_key
