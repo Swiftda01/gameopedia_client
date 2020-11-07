@@ -1,7 +1,14 @@
 # frozen_string_literal: true
 
+require 'gameopedia/configuration'
+require 'gameopedia/client'
+
 module Gameopedia # :nodoc:
-  def self.client
-    nil
+  def self.configure
+    yield(configuration)
+  end
+
+  def self.configuration
+    @configuration ||= Configuration.new
   end
 end
