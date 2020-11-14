@@ -14,37 +14,13 @@ Layout/SpaceAroundMethodCallOperator:
 Lint/DeprecatedOpenSSLConstant:
   Enabled: true
 
-Lint/DuplicateRegexpCharacterClassElement:
-  Enabled: true
-
-Lint/EmptyBlock:
-  Enabled: true
-
 Lint/MixedRegexpCaptureTypes:
-  Enabled: true
-
-Lint/NoReturnInBeginEndBlocks:
   Enabled: true
 
 Lint/RaiseException:
   Enabled: true
 
 Lint/StructNewOverride:
-  Enabled: true
-
-Lint/ToEnumArguments:
-  Enabled: true
-
-Lint/UnmodifiedReduceAccumulator:
-  Enabled: true
-
-Style/ArgumentsForwarding:
-  Enabled: true
-
-Style/CollectionCompact:
-  Enabled: true
-
-Style/DocumentDynamicEvalDefinition:
   Enabled: true
 
 Style/ExponentialNotation:
@@ -59,9 +35,6 @@ Style/HashTransformKeys:
 Style/HashTransformValues:
   Enabled: true
 
-Style/NegatedIfElseCondition:
-  Enabled: true
-
 Style/RedundantRegexpCharacterClass:
   Enabled: true
 
@@ -70,6 +43,4 @@ Style/RedundantRegexpEscape:
 
 Style/SlicingWithRange:
   Enabled: true
-
-Style/SwapValues:
-  Enabled: true
+  

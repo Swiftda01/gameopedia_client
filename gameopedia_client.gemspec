@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |s|
   s.name          = 'gameopedia-client'
-  s.version       = '0.1.3'
+  s.version       = '0.1.4'
   s.date          = '2020-11-07'
   s.summary       = 'A client for the Gameopedia consumer JSON API'
   s.description   = 'A client for the Gameopedia consumer JSON API'
